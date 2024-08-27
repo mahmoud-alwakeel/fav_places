@@ -1,4 +1,5 @@
 import 'package:fav_places/providers/user_places.dart';
+import 'package:fav_places/widgets/image_input.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -48,6 +49,10 @@ class _AddNewPlaceScreenState extends ConsumerState<AddNewPlaceScreen> {
                 controller: _titleController,
                 style: const TextStyle(color: Colors.white),
               ),
+              const SizedBox(
+                height: 16,
+              ),
+              ImageInput(),
               const SizedBox(
                 height: 16,
               ),
