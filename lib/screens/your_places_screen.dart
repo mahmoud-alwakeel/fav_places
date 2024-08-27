@@ -1,4 +1,5 @@
 import 'package:fav_places/screens/add_new_place_screen.dart';
+import 'package:fav_places/widgets/places_list.dart';
 import 'package:flutter/material.dart';
 
 class YourPlacesScreen extends StatelessWidget {
@@ -26,7 +27,7 @@ class YourPlacesScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: ListView(),
+      body: PlacesList(places: []),
     );
   }
 }
