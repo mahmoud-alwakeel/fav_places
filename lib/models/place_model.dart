@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:uuid/uuid.dart';
 
 const uuid = Uuid();
@@ -5,8 +7,10 @@ const uuid = Uuid();
 class PlaceModel {
   final String id;
   final String name;
+  final File image;
 
   PlaceModel({
     required this.name,
+    required this.image,
   }) : id = uuid.v4();
 }
