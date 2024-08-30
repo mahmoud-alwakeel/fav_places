@@ -24,6 +24,8 @@ class _ImageInputState extends State<ImageInput> {
     }
 
     setState(() {
+      // this is actually stored in a temporarily location, it might be delete by the OS, 
+      // so we should move that image to a more presistent location and we do that in the add place method in the provider
       _selectedImage = File(pickedImage.path);
     });
     widget.onPickImage(_selectedImage!);
